@@ -34,6 +34,8 @@
         {%- endif -%}
       {%- endfor -%}
     {%- endunless -%}
+    <li><a href="https://activebridge.org/blog" target="_blank"><span class="icon fa-pencil-alt">Blog</span></a></li>
+
     {%- assign _sections = include.section_items | where_exp: "section", "section.hide != true" -%}
     {%- if _pages[0] and _sections[0] -%}<hr>{%- endif -%}
     {%- unless _sections == null -%}
