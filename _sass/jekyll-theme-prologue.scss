@@ -730,6 +730,12 @@
 		}
 	}
 
+	#experience {
+		.skills-list {
+			text-align: left;
+		}
+	}
+
 /* Wide */
 
 	@include breakpoint(wide) {
