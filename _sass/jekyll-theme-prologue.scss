@@ -435,9 +435,7 @@
 		border-radius: 3px;
 		color: #fff !important;
 		text-decoration: none;
-		height: 3em;
-		width: 3em;
-		float: right;
+		padding: 0.75em 2.5em 0.75em 2.5em;
 		background-color: #73da50;
 		border: 0;
 		cursor: pointer;
@@ -452,13 +450,25 @@
 			background-color: #7eaeac;
 		}
 
-		svg {
-			margin: 0;
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  -ms-transform: translate(-50%, -50%);
-		  transform: translate(-50%, -50%);		}
+		&.send-message {
+			margin-top: 15px;
+		}
+
+		&.portfolio {
+			height: 3em;
+			width: 3em;
+			float: right;
+			padding: 0;
+
+			svg {
+				margin: 0;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  -ms-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			}
+		}
 	}
 
 /* Item */
