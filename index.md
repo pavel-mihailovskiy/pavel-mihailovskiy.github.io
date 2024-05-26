@@ -3,7 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-title: Ruby on Rails engineer
+title: Details
 icon: fa-home
 order: 1
 ---

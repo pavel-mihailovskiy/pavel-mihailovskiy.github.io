@@ -30,12 +30,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ruby on Rails engineer
-subtitle: Full-stack development with Ruby on Rails on the backend and React, React Native, and TypeScript on the frontend. Integration with third-party services like Stripe, PayPal, social networks, Twilio, etc.
+title: Full stack developer
+subtitle:
+Full-stack development expertise with Ruby on Rails for the backend and React, React Native, and TypeScript for the frontend. Proficient in integrating third-party services such as Stripe, PayPal, Twilio, and various social networks, ensuring seamless and robust application functionality.
 description: >- # this means to ignore newlines until "baseurl:"
-  The main thing I understand now is that a good engineer should possess skills in architecture, coding, DevOps, QA, and project management. This combination of skills is a tremendous asset for any project. When an engineer has all these skills, they are deeply invested in each project and can clearly envision every step.
+  A good engineer should possess skills in architecture, coding, DevOps, QA, and project management. This combination is a tremendous asset for any project. An engineer with these skills is deeply invested and can clearly envision every step.
 
-  Sometimes, when working on a new feature, the customer might change their mind about specific details, which can be quite frustrating. In such situations, a full-stack engineer is incredibly valuable because they can see the entire project holistically, including its most delicate aspects. This allows them to update the existing functionality with minimal disruption.
+  When working on new features, customer requirements can change unexpectedly, which can be frustrating. In such situations, a full stack developer is invaluable. They understand the entire project holistically, including its intricate details, allowing them to update existing functionality with minimal disruption.
 author: Pavlo Mykhailovskiy
 email: pavel.mihailovskiy@gmail.com
 avatar: assets/images/avatar.jpg
