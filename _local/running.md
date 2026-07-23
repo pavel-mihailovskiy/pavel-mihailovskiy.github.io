@@ -1,10 +1,6 @@
----
-title: Wiki
-layout: page
-icon: fa-book
-order: 10
-subtitle: How to run this site locally
----
+# Run locally
+
+Personal notes — not published on the site (this `_local/` folder is ignored by Jekyll).
 
 This is a Jekyll site. You need Ruby and Bundler installed.
 
