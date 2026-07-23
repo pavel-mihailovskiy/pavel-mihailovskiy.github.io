@@ -61,6 +61,9 @@ dribbble_url:
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
-# The following settings are NECESSARY for the Prologue theme to run:
-mote_theme: chrisbobbe/jekyll-theme-prologue
+# Formspree contact form ID (https://formspree.io) — required for the Contact section form.
+# Create a form in the Formspree dashboard and paste the ID from https://formspree.io/f/{id}
+formspree_form_id:
+
+# Theme layouts/includes/sass are vendored in this repo (no remote_theme needed).
 collections: [sections]
