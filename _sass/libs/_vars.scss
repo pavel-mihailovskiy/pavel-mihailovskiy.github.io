@@ -5,7 +5,9 @@
 
 // Duration.
 	$duration: (
-		header: 0.5s
+		header: 0.5s,
+		fast: 0.2s,
+		base: 0.35s
 	);
 
 // Size.
@@ -17,6 +19,20 @@
 	$font: (
 	);
 
-// Palette.
+// Palette — slate + deep teal (owned look, off Prologue lime)
 	$palette: (
+		accent:			#2f9e8f,
+		accent-hover:	#3bb5a4,
+		accent-active:	#268578,
+		ink:			#1c242b,
+		heading:		#2a333b,
+		body:			#5a6570,
+		muted:			#7a8590,
+		surface-0:		#ffffff,
+		surface-1:		#f4f6f7,
+		surface-2:		#e8ecee,
+		surface-3:		#dfe5e8,
+		sidebar:		#1a1f23,
+		sidebar-icon:	#4a5560,
+		footer:			#d5dcde
 	);

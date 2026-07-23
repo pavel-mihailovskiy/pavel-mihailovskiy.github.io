@@ -4,14 +4,37 @@
   subtitle
 	photo
 	photo-alt
+	cover-slides
 	auto-header
 	content
 {%- endcomment -%}
 
 {%- assign _title = include.title | default: 'Untitled' -%}
 {%- assign _slug = include.title | strip_html | slugify | default: 'untitled' -%}
+{%- assign _slides = include.cover-slides -%}
 
-{%- if include.photo and include.photo-alt -%}
+{%- if _slides and _slides.size > 0 -%}
+	{%- capture _photo -%}
+		<div class="hero-carousel" data-hero-carousel>
+			<div class="hero-carousel__viewport">
+				{%- for slide in _slides -%}
+					<figure class="hero-carousel__slide{% if forloop.first %} is-active{% endif %}" data-label="{{- slide.label | default: '' | escape -}}">
+						<img src="{{- slide.image | relative_url -}}" alt="{{- slide.label | default: 'Project screenshot' | append: ' — production work' | escape -}}" {% unless forloop.first %}loading="lazy"{% endunless %}>
+					</figure>
+				{%- endfor -%}
+			</div>
+		</div>
+		<div class="hero-carousel__ui" data-hero-carousel-ui>
+			<p class="hero-carousel__label" data-carousel-label>{{- _slides.first.label -}}</p>
+			<div class="hero-carousel__dots" role="tablist" aria-label="Featured projects">
+				{%- for slide in _slides -%}
+					<button type="button" class="hero-carousel__dot{% if forloop.first %} is-active{% endif %}" role="tab" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" aria-label="{{- slide.label | default: 'Slide' | append: ' ' | append: forloop.index | escape -}}" data-carousel-dot="{{- forloop.index0 -}}"></button>
+				{%- endfor -%}
+			</div>
+		</div>
+	{%- endcapture -%}
+	{%- assign _class = 'shade-one cover dark has-carousel' -%}
+{%- elsif include.photo and include.photo-alt -%}
 	{%- capture _photo -%}
 		<img src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back">
 	{%- endcapture -%}
@@ -39,8 +62,8 @@
 {%- endif -%}
 
 <section id="{{- _slug -}}" class="{{- _class -}}">
+  {{- _photo -}}
   <div class="container">
-    {{- _photo -}}
     {{- _heading -}}
     {{- include.content -}}
   </div>

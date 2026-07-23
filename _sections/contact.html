@@ -6,10 +6,19 @@ order: 5
 ---
 
 <p>
-  If you're looking to collaborate on an exciting project or need assistance with a specific feature, feel free to reach out to me.
-  I'm open to freelance opportunities as well as full-time employment. Let's work together to bring your ideas to life!
+  Open to <strong>contract</strong>, <strong>freelance</strong>, and selected <strong>full-time</strong> roles —
+  especially product work where full-stack ownership matters (APIs, data, UI, integrations).
 </p>
 
 <p>
+  The best place to reach me is LinkedIn.
+</p>
+
+<p class="contact-actions">
+  {%- if site.linkedin_url %}
   <a class="button" href="{{ site.linkedin_url }}" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+  {%- endif %}
+  {%- if site.github_url %}
+  <a class="button button-secondary" href="{{ site.github_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+  {%- endif %}
 </p>
